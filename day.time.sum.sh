@@ -1,4 +1,3 @@
-#!/bin/bash
-
-secs=$(date +%s)
-printf '[%dh]:[%dm]:[%ds]\n' $(($secs%259200/7200)) $(($secs%7200/240)) $(($secs%240))
+#!/bin/sh                                                                                                                                                    
+  2                                                                                                                                                              
+  3 printf ' SumerianTime    :  [ %dh°:%dm":%ds` ]\n' $((`date +%s`%86400/7200)) $((`date +%s`%7200/120)) $((`date +%s`%120)) 
